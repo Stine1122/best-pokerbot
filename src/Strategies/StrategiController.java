@@ -2,8 +2,11 @@ package com.pokerbot.strategies;
 
 import java.util.Random;
 
+
+// Put in hand: Hand then gets looked at by WinProbabilityTable, returns win%, and then we roll for choices yo
 public class StrategiController {
-    private WinProbabilityTable table = new WinProbabilityTable();
+
+   private WinProbabilityTable table = new WinProbabilityTable();
     private Random random = new Random();
 
     public String decide(Hand hand) {
